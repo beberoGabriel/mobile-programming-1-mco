@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 65%;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #eee;
+    cursor: pointer;
+}
+
+li.completed {
+    text-decoration: line-through;
+}
