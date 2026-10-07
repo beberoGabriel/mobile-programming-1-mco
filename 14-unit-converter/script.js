@@ -1,0 +1,1 @@
+function convert(){const v=Number(value.value);let r;switch(unit.value){case'kmmi':r=v*.621371;break;case'mikm':r=v*1.60934;break;case'ck':r=v*9/5+32;break;case'kc':r=(v-32)*5/9}result.textContent=`Result: ${r.toFixed(2)}`}

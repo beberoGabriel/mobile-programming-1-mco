@@ -1,0 +1,1 @@
+const bookings=[];function book(){const n=name.value.trim(),d=date.value,s=service.value;if(!n||!d)return alert('Complete all fields.');bookings.push({n,d,s});name.value='';date.value='';render()}function render(){list.innerHTML=bookings.map((b,i)=>`<li>${b.n} - ${b.s} on ${b.d} <button onclick="bookings.splice(${i},1);render()">Cancel</button></li>`).join('')}

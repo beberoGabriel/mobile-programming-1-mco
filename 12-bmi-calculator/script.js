@@ -1,0 +1,1 @@
+function calculateBMI(){const w=Number(weight.value),h=Number(height.value);if(w<=0||h<=0)return result.textContent='Enter valid values.';const bmi=w/(h*h);let status=bmi<18.5?'Underweight':bmi<25?'Normal range':bmi<30?'Overweight':'Obesity';result.textContent=`BMI: ${bmi.toFixed(2)} (${status})`}

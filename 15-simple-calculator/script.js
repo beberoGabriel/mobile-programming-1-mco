@@ -1,0 +1,1 @@
+function calculate(){const x=Number(a.value),y=Number(b.value);let r=op.value==='+'?x+y:op.value==='-'?x-y:op.value==='*'?x*y:y===0?'Cannot divide by zero':x/y;result.textContent=`Answer: ${r}`}

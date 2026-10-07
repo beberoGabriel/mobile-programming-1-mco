@@ -1,0 +1,1 @@
+const data={manila:{temp:30,condition:'Partly cloudy'},cebu:{temp:29,condition:'Cloudy'},davao:{temp:31,condition:'Sunny'}};function showWeather(){const c=city.value.trim().toLowerCase(),w=data[c];result.innerHTML=w?`<h2>${c.toUpperCase()}</h2><p>${w.temp}°C - ${w.condition}</p>`:'No sample weather data for that city.'}

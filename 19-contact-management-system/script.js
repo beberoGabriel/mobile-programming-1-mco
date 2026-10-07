@@ -1,0 +1,1 @@
+const contacts=[];function addContact(){const n=name.value.trim(),p=phone.value.trim();if(!n||!p)return;contacts.push({n,p});name.value='';phone.value='';render()}function render(){list.innerHTML=contacts.map((c,i)=>`<li>${c.n} - ${c.p} <button onclick="contacts.splice(${i},1);render()">Delete</button></li>`).join('')}
