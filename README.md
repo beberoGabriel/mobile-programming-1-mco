@@ -67,3 +67,5 @@ Gabriel Bebero
 ## Project 4: Grade Calculator
 
 ## Project 5: Digital Clock
+
+## Project 6: Quiz App
