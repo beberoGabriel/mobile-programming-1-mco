@@ -71,3 +71,5 @@ Gabriel Bebero
 ## Project 6: Quiz App
 
 ## Project 7: Temperature Converter
+
+## Project 8: Attendance System
