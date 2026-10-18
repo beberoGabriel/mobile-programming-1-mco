@@ -79,3 +79,5 @@ Gabriel Bebero
 ## Project 10: Personal Portfolio
 
 ## Project 11: Student Management System
+
+## Project 12: BMI Calculator
