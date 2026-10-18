@@ -73,3 +73,5 @@ Gabriel Bebero
 ## Project 7: Temperature Converter
 
 ## Project 8: Attendance System
+
+## Project 9: Inventory System
