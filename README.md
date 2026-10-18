@@ -39,3 +39,5 @@ A collection of programming projects and exercises.
 ## Author
 
 Gabriel Bebero
+
+## Project 1: Calculator
