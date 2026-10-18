@@ -51,3 +51,5 @@ Gabriel Bebero
 ## Project 5: Digital Clock
 
 ## Project 6: Quiz App
+
+## Project 7: Temperature Converter
