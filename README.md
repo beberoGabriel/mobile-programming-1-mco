@@ -59,3 +59,5 @@ Gabriel Bebero
 ## Project 9: Inventory System
 
 ## Project 1: Calculator
+
+## Project 2: To-Do List
