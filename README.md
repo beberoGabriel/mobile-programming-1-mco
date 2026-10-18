@@ -41,3 +41,5 @@ A collection of programming projects and exercises.
 Gabriel Bebero
 
 ## Project 1: Calculator
+
+## Project 2: To-Do List
