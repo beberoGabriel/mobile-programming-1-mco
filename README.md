@@ -85,3 +85,5 @@ Gabriel Bebero
 ## Project 13: Number Guessing Game
 
 ## Project 14: Unit Converter
+
+## Project 15: Simple Calculator
