@@ -1,1 +1,133 @@
-*{box-sizing:border-box}body{font-family:Arial,sans-serif;background:#f2f4f8;margin:0;padding:30px}main{max-width:650px;margin:30px auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 15px #0002}h1{margin-top:0}input,select,button{padding:10px;margin:5px;border:1px solid #bbb;border-radius:6px}button{cursor:pointer;background:#222;color:white}li{margin:10px 0;padding:8px;background:#f5f5f5;border-radius:6px}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #071426, #102b4e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.container {
+    background: #132b49;
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #29496d;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    background: #1d4f82;
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #a9bdd3;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #dce8f5;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #355777;
+    border-radius: 8px;
+    background: #0b1d32;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #55aaff;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #287ac0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3695e5;
+}
+
+.clear-btn {
+    margin-top: 10px;
+    background: #29445f;
+}
+
+.clear-btn:hover {
+    background: #3a5875;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #0b1d32;
+    border: 1px solid #29496d;
+    border-radius: 10px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.result-box p {
+    color: #9eb8d2;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.result-box h2 {
+    color: #62b4ff;
+    font-size: 21px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

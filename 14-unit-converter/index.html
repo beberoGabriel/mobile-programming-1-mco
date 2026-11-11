@@ -1,5 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Unit Converter</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Unit Converter</h1><input id="value" type="number" placeholder="Value"><select id="unit"><option value="kmmi">Kilometers to Miles</option><option value="mikm">Miles to Kilometers</option><option value="ck">Celsius to Fahrenheit</option><option value="kc">Fahrenheit to Celsius</option></select><button onclick="convert()">Convert</button><h2 id="result"></h2></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="icon">⇄</div>
+
+        <h1>Unit Converter</h1>
+        <p class="subtitle">Convert measurements quickly and easily.</p>
+
+        <label for="value">Enter Value</label>
+        <input type="number" id="value" placeholder="Enter a number" step="any">
+
+        <label for="unit">Select Conversion</label>
+        <select id="unit">
+            <option value="kmmi">Kilometers to Miles</option>
+            <option value="mikm">Miles to Kilometers</option>
+            <option value="ck">Celsius to Fahrenheit</option>
+            <option value="kc">Fahrenheit to Celsius</option>
+        </select>
+
+        <button onclick="convert()">Convert</button>
+        <button class="clear-btn" onclick="clearConverter()">Clear</button>
+
+        <div class="result-box">
+            <p>Conversion Result</p>
+            <h2 id="result">Your result will appear here</h2>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
