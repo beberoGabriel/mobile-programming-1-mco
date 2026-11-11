@@ -1,5 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Login and Registration System</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Login / Register</h1><input id="username" placeholder="Username"><input id="password" type="password" placeholder="Password"><button onclick="register()">Register</button><button onclick="login()">Login</button><p id="message"></p></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <div class="logo">🔐</div>
+
+        <header>
+            <h1>Welcome</h1>
+            <p>Login or create your account.</p>
+        </header>
+
+        <section>
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                autocomplete="username"
+            >
+
+            <label for="password">Password</label>
+            <div class="password-wrapper">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                >
+                <button type="button" id="togglePassword" class="toggle-button">
+                    Show
+                </button>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="registerButton">Register</button>
+                <button type="button" id="loginButton" class="login-button">
+                    Login
+                </button>
+            </div>
+
+            <button type="button" id="clearButton" class="clear-button">
+                Clear Form
+            </button>
+
+            <p id="message" aria-live="polite"></p>
+        </section>
+
+        <footer>
+            <p>Login System | Educational Project</p>
+        </footer>
+    </main>
+
+</body>
 </html>
