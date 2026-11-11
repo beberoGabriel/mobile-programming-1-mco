@@ -1,5 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Student Management System</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Student Management System</h1><input id="name" placeholder="Student name"><input id="course" placeholder="Course"><button onclick="addStudent()">Add Student</button><ul id="list"></ul></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Student Management System</h1>
+            <p>Manage student information easily</p>
+        </header>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2 id="formTitle">Add New Student</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter student name"
+                maxlength="60"
+            >
+
+            <input
+                type="text"
+                id="course"
+                placeholder="Enter course"
+                maxlength="60"
+            >
+
+            <button id="saveButton" onclick="saveStudent()">
+                Add Student
+            </button>
+
+            <button
+                id="cancelButton"
+                class="cancel-btn"
+                onclick="cancelEdit()"
+                hidden
+            >
+                Cancel
+            </button>
+        </section>
+
+        <section class="list-section">
+            <h2>Student Records</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search student..."
+                oninput="renderStudents()"
+            >
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentList"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p id="message" aria-live="polite"></p>
+
+    </main>
+
+</body>
 </html>
