@@ -1,5 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Shopping Cart</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Shopping Cart</h1><input id="item" placeholder="Product"><input id="price" type="number" placeholder="Price"><button onclick="addItem()">Add</button><ul id="cart"></ul><h2 id="total">Total: ₱0.00</h2></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <div class="cart-icon">🛒</div>
+            <h1>Shopping Cart</h1>
+            <p>Manage your shopping items easily.</p>
+        </header>
+
+        <section class="form-section">
+
+            <label for="item">Product Name</label>
+            <input
+                type="text"
+                id="item"
+                placeholder="Enter product name"
+                maxlength="60"
+            >
+
+            <label for="price">Product Price (₱)</label>
+            <input
+                type="number"
+                id="price"
+                placeholder="Enter price"
+                min="0.01"
+                step="0.01"
+            >
+
+            <button onclick="addItem()">Add to Cart</button>
+        </section>
+
+        <section class="cart-section">
+            <div class="cart-heading">
+                <h2>Your Items</h2>
+                <button class="clear-btn" onclick="clearCart()">
+                    Clear Cart
+                </button>
+            </div>
+
+            <ul id="cart">
+                <li class="empty-message">Your cart is empty.</li>
+            </ul>
+
+            <div class="total-box">
+                <span>Total Amount</span>
+                <h2 id="total">₱0.00</h2>
+            </div>
+        </section>
+
+        <footer>
+            <p>Shopping Cart Management System</p>
+        </footer>
+
+    </main>
+
+</body>
 </html>
