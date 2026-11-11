@@ -1,5 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Quiz Management System</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Quiz</h1><div id="quiz"></div><button onclick="nextQuestion()">Next</button><h2 id="score"></h2></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <div class="quiz-icon">📝</div>
+            <h1>Quiz Challenge</h1>
+            <p>Test your knowledge of web development!</p>
+        </header>
+
+        <section id="quizSection">
+            <div class="progress-info">
+                <span id="questionNumber">Question 1 of 5</span>
+                <span id="progressPercent">20%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <h2 id="question">Question goes here</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="message" aria-live="polite"></p>
+
+            <button id="nextButton">Next Question</button>
+        </section>
+
+        <section id="resultSection" hidden>
+            <div class="result-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p class="result-label">Your Final Score</p>
+            <div id="finalScore" class="final-score">0/5</div>
+            <p id="percentage" class="percentage">0%</p>
+            <p id="resultMessage"></p>
+            <button id="restartButton">Try Again</button>
+        </section>
+
+        <footer>
+            <p>Quiz Management System | Educational Project</p>
+        </footer>
+    </main>
+
+</body>
 </html>
