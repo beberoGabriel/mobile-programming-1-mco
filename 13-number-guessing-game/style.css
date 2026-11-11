@@ -1,1 +1,128 @@
-*{box-sizing:border-box}body{font-family:Arial,sans-serif;background:#f2f4f8;margin:0;padding:30px}main{max-width:650px;margin:30px auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 15px #0002}h1{margin-top:0}input,select,button{padding:10px;margin:5px;border:1px solid #bbb;border-radius:6px}button{cursor:pointer;background:#222;color:white}li{margin:10px 0;padding:8px;background:#f5f5f5;border-radius:6px}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #edf2f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #263445;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 30px;
+    border-radius: 13px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.game-icon {
+    width: 65px;
+    height: 65px;
+    background: #173f5f;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+header h1 {
+    color: #173f5f;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #718096;
+}
+
+.instructions {
+    background: #eaf2f8;
+    padding: 15px;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #173f5f;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 7px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2471a3;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #154360;
+}
+
+button:disabled {
+    background: #718096;
+    cursor: not-allowed;
+}
+
+.new-game-btn {
+    background: #526777;
+}
+
+.new-game-btn:hover {
+    background: #34495e;
+}
+
+.result-box {
+    background: #f3f6f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.result-box h2 {
+    color: #173f5f;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    color: #526777;
+}
+
+footer {
+    text-align: center;
+    color: #718096;
+    font-size: 13px;
+    margin-top: 25px;
+}

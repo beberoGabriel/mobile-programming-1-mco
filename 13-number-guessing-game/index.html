@@ -1,5 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Number Guessing Game</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Guess the Number</h1><p>Guess a number from 1 to 100.</p><input id="guess" type="number"><button onclick="checkGuess()">Guess</button><button onclick="newGame()">New Game</button><p id="message"></p></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <div class="game-icon">?</div>
+            <h1>Number Guessing Game</h1>
+            <p>Can you guess the secret number?</p>
+        </header>
+
+        <section class="game-section">
+
+            <div class="instructions">
+                Guess a number between <strong>1 and 100</strong>.
+            </div>
+
+            <input
+                type="number"
+                id="guess"
+                placeholder="Enter your guess"
+                min="1"
+                max="100"
+            >
+
+            <button id="guessButton" onclick="checkGuess()">
+                Submit Guess
+            </button>
+
+            <button class="new-game-btn" onclick="newGame()">
+                New Game
+            </button>
+
+            <div class="result-box">
+                <h2 id="message" aria-live="polite">
+                    Good luck!
+                </h2>
+                <p id="attempts">Attempts: 0</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Have fun and enjoy the game!</p>
+        </footer>
+
+    </main>
+
+</body>
 </html>
