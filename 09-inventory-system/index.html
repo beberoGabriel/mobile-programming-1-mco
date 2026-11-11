@@ -1,31 +1,83 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Inventory System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<div class="container">
-    <h1>Simple Inventory</h1>
+    <div class="container">
+        <header>
+            <h1>Inventory Management</h1>
+            <p>Manage your products and stock easily.</p>
+        </header>
 
-    <input type="text" id="product" placeholder="Product name">
-    <input type="number" id="quantity" placeholder="Quantity">
+        <div class="summary">
+            <div class="summary-card">
+                <h3 id="totalProducts">0</h3>
+                <p>Total Products</p>
+            </div>
 
-    <button onclick="addProduct()">Add Product</button>
+            <div class="summary-card">
+                <h3 id="totalStock">0</h3>
+                <p>Total Stock</p>
+            </div>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-            </tr>
-        </thead>
+        <section class="form-section">
+            <h2>Add New Product</h2>
 
-        <tbody id="inventory"></tbody>
-    </table>
-</div>
+            <input
+                type="text"
+                id="product"
+                placeholder="Enter product name"
+                maxlength="60"
+            >
 
-<script src="script.js"></script>
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Enter quantity"
+                min="0"
+                step="1"
+            >
+
+            <button onclick="addProduct()">Add Product</button>
+        </section>
+
+        <section class="inventory-section">
+            <h2>Product Inventory</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search product..."
+                oninput="displayProducts()"
+            >
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Stock Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="inventory"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p id="message" aria-live="polite"></p>
+    </div>
+
 </body>
 </html>
