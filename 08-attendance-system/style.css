@@ -1,31 +1,179 @@
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: #edf2f7;
+    margin: 0;
+    padding: 30px 15px;
+    color: #263445;
 }
 
 .container {
-    width: 600px;
-    margin: 50px auto;
+    max-width: 850px;
+    margin: 20px auto;
     background: white;
-    padding: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #173f5f;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #718096;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.summary-card {
+    background: #eaf2f8;
+    padding: 18px;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.summary-card h3 {
+    color: #2471a3;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: #526777;
+}
+
+.add-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 input {
-    padding: 10px;
-    width: 60%;
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 7px;
+    font-size: 15px;
 }
 
 button {
-    padding: 10px;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-section button {
+    background: #2471a3;
+    color: white;
+}
+
+.add-section button:hover {
+    background: #154360;
+}
+
+.table-container {
+    overflow-x: auto;
 }
 
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
+    min-width: 500px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #173f5f;
+    color: white;
+}
+
+.status-present {
+    background: #dcefe5;
+    color: #246b45;
+}
+
+.status-absent {
+    background: #fce8e8;
+    color: #a33a3a;
+}
+
+.status-present,
+.status-absent {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.action-btn {
+    margin: 3px;
+    background: #eaf2f8;
+    color: #173f5f;
+}
+
+.delete-btn {
+    background: #eeeeee;
+    color: #444;
+}
+
+.empty {
+    text-align: center;
+    color: #718096;
+    padding: 25px;
+}
+
+#message {
+    color: #2471a3;
+    margin-top: 15px;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 18px;
+    }
+
+    .summary {
+        gap: 8px;
+    }
+
+    .summary-card {
+        padding: 12px 5px;
+    }
+
+    .summary-card h3 {
+        font-size: 22px;
+    }
+
+    .summary-card p {
+        font-size: 12px;
+    }
+
+    .add-section {
+        flex-direction: column;
+    }
 }

@@ -1,29 +1,71 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Attendance System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<div class="container">
-    <h1>Student Attendance</h1>
+    <div class="container">
+        <header>
+            <h1>Student Attendance</h1>
+            <p>Manage and monitor student attendance</p>
+        </header>
 
-    <input type="text" id="studentName" placeholder="Student name">
-    <button onclick="addStudent()">Add Student</button>
+        <section class="summary">
+            <div class="summary-card">
+                <h3 id="totalStudents">0</h3>
+                <p>Total Students</p>
+            </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Status</th>
-            </tr>
-        </thead>
+            <div class="summary-card">
+                <h3 id="presentCount">0</h3>
+                <p>Present</p>
+            </div>
 
-        <tbody id="attendanceList"></tbody>
-    </table>
-</div>
+            <div class="summary-card">
+                <h3 id="absentCount">0</h3>
+                <p>Absent</p>
+            </div>
+        </section>
 
-<script src="script.js"></script>
+        <section class="add-section">
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter student name"
+                maxlength="60"
+            >
+            <button onclick="addStudent()">Add Student</button>
+        </section>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="attendanceList">
+                    <tr>
+                        <td colspan="4" class="empty">
+                            No students added yet.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+    </div>
+
 </body>
 </html>
