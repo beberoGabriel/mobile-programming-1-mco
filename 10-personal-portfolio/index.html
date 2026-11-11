@@ -1,77 +1,132 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Bebero Jhon Gabriel P.</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
+    <title>My Portfolio - Bebero Jhon Gabriel P.</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
 
-```
-<header>
-    <h1>My Portfolio</h1>
-    <h2>BEBERO JHON GABRIEL P.</h2>
-    <p>Computer Science Student</p>
-</header>
+    <nav class="navbar">
+        <h2 class="logo">My Portfolio</h2>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        Hello! I am a Computer Science student interested in
-        programming, web development, and software development.
-    </p>
-</section>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section>
-    <h2>My Skills</h2>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-    </ul>
-</section>
+            <h1>BEBERO JHON GABRIEL P.</h1>
 
-<section>
-    <h2>My Projects</h2>
+            <h2>Computer Science Student</h2>
 
-    <div class="project">
-        <h3>Inventory System</h3>
-        <p>
-            A simple system for managing products and stock.
-        </p>
-    </div>
+            <p>
+                Interested in programming, web development,
+                and creating useful software applications.
+            </p>
 
-    <div class="project">
-        <h3>Attendance System</h3>
-        <p>
-            A simple student attendance management system.
-        </p>
-    </div>
+            <a href="#about" class="hero-button">Explore My Portfolio</a>
+        </div>
+    </header>
 
-    <div class="project">
-        <h3>Calculator</h3>
-        <p>
-            A simple calculator created using HTML, CSS, and JavaScript.
-        </p>
-    </div>
-</section>
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
 
-<section>
-    <h2>Contact Me</h2>
-    <p>Email:jhongabrielbebero.17@example.com</p>
-    <p>GitHub:GabrielBEBERO</p>
-</section>
+        <div class="about-content">
+            <p>
+                Hello! I am Bebero Jhon Gabriel P., a Computer Science
+                student passionate about technology and programming.
+                I enjoy learning new programming languages, developing
+                websites, and creating software projects.
+            </p>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2026 Bebero Jhon Gabriel P. | My Portfolio</p>
-</footer>
-```
+    <section id="skills" class="section">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">MySQL</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Inventory System</h3>
+                <p>
+                    A web-based application for managing products,
+                    quantities, and inventory records.
+                </p>
+                <span>HTML | CSS | JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Attendance System</h3>
+                <p>
+                    A student attendance application for recording
+                    and monitoring attendance status.
+                </p>
+                <span>HTML | CSS | JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator</h3>
+                <p>
+                    A simple calculator that performs basic
+                    mathematical operations.
+                </p>
+                <span>HTML | CSS | JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Quiz Application</h3>
+                <p>
+                    An interactive quiz application that allows
+                    users to answer questions and view their scores.
+                </p>
+                <span>HTML | CSS | JavaScript</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-content">
+            <p><strong>Email:</strong>
+                jhongabrielbebero.17@example.com
+            </p>
+
+            <p><strong>GitHub:</strong>
+                GabrielBEBERO
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Bebero Jhon Gabriel P. | My Portfolio</p>
+    </footer>
 
 </body>
 </html>
