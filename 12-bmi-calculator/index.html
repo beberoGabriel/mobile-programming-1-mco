@@ -1,5 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>BMI Calculator</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>BMI Calculator</h1><input id="weight" type="number" placeholder="Weight (kg)"><input id="height" type="number" placeholder="Height (m)"><button onclick="calculateBMI()">Calculate</button><h2 id="result"></h2></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>BMI Calculator</h1>
+            <p>Body Mass Index Information Tool</p>
+        </header>
+
+        <section class="calculator">
+            <label for="weight">Weight (kg)</label>
+            <input
+                type="number"
+                id="weight"
+                placeholder="Enter weight"
+                min="0"
+                step="any"
+            >
+
+            <label for="height">Height (m)</label>
+            <input
+                type="number"
+                id="height"
+                placeholder="Enter height"
+                min="0"
+                step="any"
+            >
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <button class="clear-btn" onclick="clearCalculator()">Clear</button>
+
+            <div class="result-box">
+                <h2 id="result">Your result will appear here</h2>
+                <p id="message"></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>BMI is a general screening measure, not a diagnosis.</p>
+        </footer>
+
+    </main>
+
+</body>
 </html>
