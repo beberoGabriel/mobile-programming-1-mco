@@ -1,5 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Library Management System</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Library Management</h1><input id="book" placeholder="Book title"><input id="author" placeholder="Author"><button onclick="addBook()">Add Book</button><ul id="list"></ul></main><script src="script.js"></script></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <div class="icon">📚</div>
+            <h1>Library Management</h1>
+            <p>Organize and manage your library books.</p>
+        </header>
+
+        <section class="form-section">
+
+            <label for="book">Book Title</label>
+            <input
+                type="text"
+                id="book"
+                placeholder="Enter book title"
+                maxlength="100"
+            >
+
+            <label for="author">Author Name</label>
+            <input
+                type="text"
+                id="author"
+                placeholder="Enter author name"
+                maxlength="100"
+            >
+
+            <button onclick="addBook()">Add Book</button>
+
+        </section>
+
+        <section class="statistics">
+
+            <div class="stat-card">
+                <span>Total Books</span>
+                <h2 id="totalBooks">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Available</span>
+                <h2 id="availableBooks">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Borrowed</span>
+                <h2 id="borrowedBooks">0</h2>
+            </div>
+
+        </section>
+
+        <section class="library-section">
+
+            <h2>Book Collection</h2>
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Search by title or author..."
+                oninput="renderBooks()"
+            >
+
+            <ul id="list">
+                <li class="empty-message">No books added yet.</li>
+            </ul>
+
+        </section>
+
+        <footer>
+            <p>Library Management System</p>
+        </footer>
+
+    </main>
+
+</body>
 </html>
