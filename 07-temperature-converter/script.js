@@ -1,15 +1,44 @@
+
 function convert() {
-    let temp = Number(document.getElementById("temperature").value);
-    let unit = document.getElementById("unit").value;
-    let result;
+    const temperatureInput = document.getElementById("temperature");
+    const unit = document.getElementById("unit").value;
+    const result = document.getElementById("result");
+    const message = document.getElementById("message");
+
+    const temp = temperatureInput.value.trim();
+
+    if (temp === "") {
+        result.textContent = "Please enter a temperature.";
+        message.textContent = "";
+        return;
+    }
+
+    const number = Number(temp);
+
+    if (!Number.isFinite(number)) {
+        result.textContent = "Please enter a valid number.";
+        message.textContent = "";
+        return;
+    }
+
+    let converted;
 
     if (unit === "celsius") {
-        result = (temp * 9 / 5) + 32;
-        document.getElementById("result").textContent =
-            result.toFixed(2) + " °F";
+        converted = (number * 9 / 5) + 32;
+
+        result.textContent = converted.toFixed(2) + " °F";
+        message.textContent = number + " °C converted to Fahrenheit.";
     } else {
-        result = (temp - 32) * 5 / 9;
-        document.getElementById("result").textContent =
-            result.toFixed(2) + " °C";
+        converted = (number - 32) * 5 / 9;
+
+        result.textContent = converted.toFixed(2) + " °C";
+        message.textContent = number + " °F converted to Celsius.";
     }
+}
+
+function clearResult() {
+    document.getElementById("temperature").value = "";
+    document.getElementById("result").textContent =
+        "Your result will appear here";
+    document.getElementById("message").textContent = "";
 }

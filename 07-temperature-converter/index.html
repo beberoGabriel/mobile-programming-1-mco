@@ -1,26 +1,36 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<div class="container">
-    <h1>Temperature Converter</h1>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <p>Convert temperatures easily</p>
 
-    <input type="number" id="temperature" placeholder="Enter temperature">
+        <input
+            type="number"
+            id="temperature"
+            placeholder="Enter temperature"
+        >
 
-    <select id="unit">
-        <option value="celsius">Celsius to Fahrenheit</option>
-        <option value="fahrenheit">Fahrenheit to Celsius</option>
-    </select>
+        <select id="unit">
+            <option value="celsius">Celsius to Fahrenheit</option>
+            <option value="fahrenheit">Fahrenheit to Celsius</option>
+        </select>
 
-    <button onclick="convert()">Convert</button>
+        <button onclick="convert()">Convert Temperature</button>
+        <button class="clear-btn" onclick="clearResult()">Clear</button>
 
-    <h2 id="result"></h2>
-</div>
+        <h2 id="result">Your result will appear here</h2>
+        <p id="message"></p>
+    </div>
 
-<script src="script.js"></script>
 </body>
 </html>
