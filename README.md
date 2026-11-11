@@ -1,36 +1,38 @@
 # 25-Code
 
-A collection of programming projects and exercises.
+A collection of 25 beginner-friendly programming projects and exercises created to practice programming fundamentals, problem-solving, and web development skills.
 
 ## Projects
 
-1. Calculator
-2. To-Do List
-3. Login System
-4. Grade Calculator
-5. Digital Clock
-6. Quiz App
-7. Temperature Converter
-8. Attendance System
-9. Inventory System
-10. Personal Portfolio
-11. Student Management System
-12. BMI Calculator
-13. Number Guessing Game
-14. Unit Converter
-15. Simple Calculator
-16. Shopping Cart
-17. Expense Tracker
-18. Library Management System
-19. Contact Management System
-20. To-Do App
-21. Weather App
-22. Login Registration System
-23. Quiz Management System
-24. Bank Account System
-25. Online Booking System
+| No. | Project Name |
+|---:|---|
+| 01 | Calculator |
+| 02 | To-Do List |
+| 03 | Login System |
+| 04 | Grade Calculator |
+| 05 | Digital Clock |
+| 06 | Quiz App |
+| 07 | Temperature Converter |
+| 08 | Attendance System |
+| 09 | Inventory System |
+| 10 | Personal Portfolio |
+| 11 | Student Management System |
+| 12 | BMI Calculator |
+| 13 | Number Guessing Game |
+| 14 | Unit Converter |
+| 15 | Simple Calculator |
+| 16 | Shopping Cart |
+| 17 | Expense Tracker |
+| 18 | Library Management System |
+| 19 | Contact Management System |
+| 20 | To-Do App |
+| 21 | Weather App |
+| 22 | Login Registration System |
+| 23 | Quiz Management System |
+| 24 | Bank Account System |
+| 25 | Online Booking System |
 
-## Technologies
+## Technologies Used
 
 - HTML
 - CSS
@@ -38,102 +40,8 @@ A collection of programming projects and exercises.
 
 ## Author
 
-Gabriel Bebero
+**Gabriel Bebero**
 
-## Project 1: Calculator
+---
 
-## Project 2: To-Do List
-
-## Project 3: Login System
-
-## Project 4: Grade Calculator
-
-## Project 5: Digital Clock
-
-## Project 6: Quiz App
-
-## Project 7: Temperature Converter
-
-## Project 8: Attendance System
-
-## Project 9: Inventory System
-
-## Project 1: Calculator
-
-## Project 2: To-Do List
-
-## Project 3: Login System
-
-## Project 4: Grade Calculator
-
-## Project 5: Digital Clock
-
-## Project 6: Quiz App
-
-## Project 7: Temperature Converter
-
-## Project 8: Attendance System
-
-## Project 9: Inventory System
-
-## Project 10: Personal Portfolio
-
-## Project 11: Student Management System
-
-## Project 12: BMI Calculator
-
-## Project 13: Number Guessing Game
-
-## Project 14: Unit Converter
-
-## Project 15: Simple Calculator
-
-## Project 16: Shopping Cart
-
-## Project 17: Expense Tracker
-
-## Project 18: Library Management System
-
-## Project 19: Contact Management System
-
-## Project 20: To-Do App
-
-<!-- Project documentation update 1 -->
-
-<!-- Project documentation update 2 -->
-
-<!-- Project documentation update 3 -->
-
-<!-- Project documentation update 4 -->
-
-<!-- Project documentation update 5 -->
-
-<!-- Project documentation update 6 -->
-
-<!-- Project documentation update 7 -->
-
-<!-- Project documentation update 8 -->
-
-<!-- Project documentation update 9 -->
-
-<!-- Project documentation update 10 -->
-
-<!-- Project documentation update 11 -->
-
-<!-- Project documentation update 12 -->
-
-<!-- Project documentation update 13 -->
-
-<!-- Project documentation update 14 -->
-
-<!-- Project documentation update 15 -->
-
-<!-- Project documentation update 16 -->
-
-<!-- Project documentation update 17 -->
-
-<!-- Project documentation update 18 -->
-
-<!-- Project documentation update 19 -->
-
-<!-- Project documentation update 20 -->
+This repository contains programming exercises and projects developed for learning and practice.
